@@ -20,7 +20,7 @@ io.on("connection", (socket) => {
     socket.on("signin", (id) => {
         console.log("signin ", id);
         clients[id] = socket;
-        console.log("clients ", clients);
+        // console.log("clients ", clients);
     })
     socket.on("message", (msg) => {
         console.log("msg => ", msg);
