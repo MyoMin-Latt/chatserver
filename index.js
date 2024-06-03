@@ -9,12 +9,21 @@ var io = require("socket.io")(server);
 // middleware
 app.use(express.json());
 app.use(cors());
+var clients = {};
 
 io.on("connection", (socket) => {
     console.log("connected");
     console.log(socket.id, "Has joined");
-    socket.on("/test", (msg) => {
-        console.log(msg);
+    // socket.on("/test", (msg) => {
+    //     console.log(msg);
+    // })
+    socket.on("signin", (id) => {
+        console.log("signin ", id);
+        clients[id] = socket;
+        console.log("clients ", clients);
+    })
+    socket.on("message", (msg) => {
+        console.log("msg => ", msg);
     })
 });
 
