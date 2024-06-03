@@ -4,21 +4,21 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
 var server = http.createServer(app);
-var io = require("socket.io")(server, {
-    cors: {
-        origin: "*"
-    }
-});
+var io = require("socket.io")(server);
 
 // middleware
 app.use(express.json());
 app.use(cors());
 
-io.on("Connection", (socket) => {
+io.on("connection", (socket) => {
     console.log("connected");
+    console.log(socket.id, "Has joined");
+    socket.on("/test", (msg) => {
+        console.log(msg);
+    })
 });
 
-server.listen(port, () => {
-    console.log("Server started");
+server.listen(port, "0.0.0.0",() => {
+    console.log("Server started at port ", port);
 });
 
