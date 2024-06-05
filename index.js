@@ -11,6 +11,9 @@ app.use(express.json());
 app.use(cors());
 var clients = {};
 
+const routes = require("./routes");
+app.use("/routes", routes);
+
 io.on("connection", (socket) => {
     console.log("connected");
     console.log(socket.id, "Has joined");
