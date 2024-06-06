@@ -13,6 +13,8 @@ var clients = {};
 
 const routes = require("./routes");
 app.use("/routes", routes);
+app.use("/uploads", express.static("uploads"));
+
 
 io.on("connection", (socket) => {
     console.log("connected");
