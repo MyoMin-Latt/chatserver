@@ -17,18 +17,18 @@ app.use("/uploads", express.static("uploads"));
 
 
 io.on("connection", (socket) => {
-    console.log("connected");
-    console.log(socket.id, "Has joined");
+    // console.log("connected");
+    // console.log(socket.id, "Has joined");
     // socket.on("/test", (msg) => {
     //     console.log(msg);
     // })
     socket.on("signin", (id) => {
-        console.log("signin ", id);
+        // console.log("signin ", id);
         clients[id] = socket;
         // console.log("clients ", clients);
     })
     socket.on("message", (msg) => {
-        console.log("msg => ", msg);
+        // console.log("msg => ", msg);
         let targetId = msg.targetId;
         if (clients[targetId]) clients[targetId].emit("message", msg);
     })
