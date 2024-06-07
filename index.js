@@ -1,49 +1,36 @@
-const express = require("express");
-var http = require("http");
-const cors = require("cors");
+const { Server } = require('socket.io');
+const http = require('http');
+const express = require('express');
 const app = express();
-const port = process.env.PORT || 5000;
-var server = http.createServer(app);
-var io = require("socket.io")(server, {
+const server = http.createServer(app);
+
+const io = new Server(server, {
     cors: {
         origin: "*",
         methods: ["GET", "POST"]
     }
 });
 
-// middleware
-app.use(express.json());
-app.use(cors());
-var clients = {};
+io.on('connection', (socket) => {
+    console.log('a user connected');
+    socket.on('disconnect', () => {
+        console.log('user disconnected');
+    });
 
-const routes = require("./routes");
-app.use("/routes", routes);
-app.use("/uploads", express.static("uploads"));
-
-
-io.on("connection", (socket) => {
-    // console.log("connected");
-    // console.log(socket.id, "Has joined");
-    // socket.on("/test", (msg) => {
-    //     console.log(msg);
-    // })
-    socket.on("signin", (id) => {
-        // console.log("signin ", id);
-        clients[id] = socket;
-        // console.log("clients ", clients);
-    })
-    socket.on("message", (msg) => {
-        // console.log("msg => ", msg);
-        let targetId = msg.targetId;
-        if (clients[targetId]) clients[targetId].emit("message", msg);
-    })
+    socket.on('your_event', (data) => {
+        console.log('message: ' + data.message);
+        // Echo the message back to the client
+        socket.emit('your_event', { message: 'Hello, Client!' });
+    });
 });
 
-app.route("/check").get((req, res) => {
-    return res.json("Your App is working fine on vercel");
-})
-
-server.listen(port, "0.0.0.0",() => {
-    console.log("Server started at port ", port);
+app.get('/', (req, res) => {
+    res.send('Socket.IO server is running');
 });
 
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
+});
+
+module.exports = app;
