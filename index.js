@@ -4,7 +4,12 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
 var server = http.createServer(app);
-var io = require("socket.io")(server);
+var io = require("socket.io")(server, {
+    cors: {
+        origin: "*",
+        methods: ["GET", "POST"]
+    }
+});
 
 // middleware
 app.use(express.json());
