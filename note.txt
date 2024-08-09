@@ -1,0 +1,323 @@
+Th_W3WzBpPYdddx-AAAF Has joined
+signin  3
+{
+  '1': Socket {
+    _events: [Object: null prototype] {
+      error: [Function: noop],
+      signin: [Function (anonymous)],
+      message: [Function (anonymous)]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    nsp: Namespace {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      sockets: [Map],
+      _fns: [],
+      _ids: 0,
+      server: [Server],
+      name: '/',
+      adapter: [Adapter],
+      [Symbol(kCapture)]: false
+    },
+    client: Client {
+      sockets: Map(0) {},
+      nsps: Map(0) {},
+      server: [Server],
+      conn: [Socket],
+      encoder: [Encoder],
+      decoder: [Decoder],
+      id: 'Ndc-eAKpiYpKgX0pAAAA',
+      onclose: [Function: bound onclose],
+      ondata: [Function: bound ondata],
+      onerror: [Function: bound onerror],
+      ondecoded: [Function: bound ondecoded],
+      connectTimeout: undefined
+    },
+    recovered: false,
+    data: {},
+    connected: false,
+    acks: Map(0) {},
+    fns: [],
+    flags: {},
+    server: Server {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      _nsps: [Map],
+      parentNsps: Map(0) {},
+      parentNamespacesFromRegExp: Map(0) {},
+      _path: '/socket.io',
+      clientPathRegex: /^\/socket\.io\/socket\.io(\.msgpack|\.esm)?(\.min)?\.js(\.map)?(?:\?|$)/,
+      _connectTimeout: 45000,
+      _serveClient: true,
+      _parser: [Object],
+      encoder: [Encoder],
+      opts: [Object],
+      _adapter: [class Adapter extends EventEmitter],
+      sockets: [Namespace],
+      eio: [Server],
+      httpServer: [Server],
+      engine: [Server],
+      [Symbol(kCapture)]: false
+    },
+    adapter: Adapter {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      nsp: [Namespace],
+      rooms: [Map],
+      sids: [Map],
+      encoder: [Encoder],
+      [Symbol(kCapture)]: false
+    },
+    id: 'WpQxzINs2n1-bi-AAAAB',
+    handshake: {
+      headers: [Object],
+      time: 'Thu Aug 08 2024 17:11:18 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      secure: false,
+      issued: 1723113678208,
+      url: '/socket.io/?EIO=4&transport=websocket',
+      query: [Object: null prototype],
+      auth: {}
+    },
+    join: [Function: noop],
+    [Symbol(kCapture)]: false
+  },
+  '2': Socket {
+    _events: [Object: null prototype] {
+      error: [Function: noop],
+      signin: [Function (anonymous)],
+      message: [Function (anonymous)]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    nsp: Namespace {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      sockets: [Map],
+      _fns: [],
+      _ids: 0,
+      server: [Server],
+      name: '/',
+      adapter: [Adapter],
+      [Symbol(kCapture)]: false
+    },
+    client: Client {
+      sockets: [Map],
+      nsps: [Map],
+      server: [Server],
+      conn: [Socket],
+      encoder: [Encoder],
+      decoder: [Decoder],
+      id: 'nrwNlekY1497R1ypAAAC',
+      onclose: [Function: bound onclose],
+      ondata: [Function: bound ondata],
+      onerror: [Function: bound onerror],
+      ondecoded: [Function: bound ondecoded],
+      connectTimeout: undefined
+    },
+    recovered: false,
+    data: {},
+    connected: true,
+    acks: Map(0) {},
+    fns: [],
+    flags: {},
+    server: Server {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      _nsps: [Map],
+      parentNsps: Map(0) {},
+      parentNamespacesFromRegExp: Map(0) {},
+      _path: '/socket.io',
+      clientPathRegex: /^\/socket\.io\/socket\.io(\.msgpack|\.esm)?(\.min)?\.js(\.map)?(?:\?|$)/,
+      _connectTimeout: 45000,
+      _serveClient: true,
+      _parser: [Object],
+      encoder: [Encoder],
+      opts: [Object],
+      _adapter: [class Adapter extends EventEmitter],
+      sockets: [Namespace],
+      eio: [Server],
+      httpServer: [Server],
+      engine: [Server],
+      [Symbol(kCapture)]: false
+    },
+    adapter: Adapter {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      nsp: [Namespace],
+      rooms: [Map],
+      sids: [Map],
+      encoder: [Encoder],
+      [Symbol(kCapture)]: false
+    },
+    id: 'wRpsUhipno2kVUk_AAAD',
+    handshake: {
+      headers: [Object],
+      time: 'Thu Aug 08 2024 17:14:17 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.43',
+      xdomain: false,
+      secure: false,
+      issued: 1723113857219,
+      url: '/socket.io/?EIO=4&transport=websocket',
+      query: [Object: null prototype],
+      auth: {}
+    },
+    [Symbol(kCapture)]: false
+  },
+  '3': Socket {
+    _events: [Object: null prototype] {
+      error: [Function: noop],
+      signin: [Function (anonymous)],
+      message: [Function (anonymous)]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    nsp: Namespace {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      sockets: [Map],
+      _fns: [],
+      _ids: 0,
+      server: [Server],
+      name: '/',
+      adapter: [Adapter],
+      [Symbol(kCapture)]: false
+    },
+    client: Client {
+      sockets: [Map],
+      nsps: [Map],
+      server: [Server],
+      conn: [Socket],
+      encoder: [Encoder],
+      decoder: [Decoder],
+      id: '13GcflNrwv_D5vc7AAAE',
+      onclose: [Function: bound onclose],
+      ondata: [Function: bound ondata],
+      onerror: [Function: bound onerror],
+      ondecoded: [Function: bound ondecoded],
+      connectTimeout: undefined
+    },
+    recovered: false,
+    data: {},
+    connected: true,
+    acks: Map(0) {},
+    fns: [],
+    flags: {},
+    server: Server {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      _nsps: [Map],
+      parentNsps: Map(0) {},
+      parentNamespacesFromRegExp: Map(0) {},
+      _path: '/socket.io',
+      clientPathRegex: /^\/socket\.io\/socket\.io(\.msgpack|\.esm)?(\.min)?\.js(\.map)?(?:\?|$)/,
+      _connectTimeout: 45000,
+      _serveClient: true,
+      _parser: [Object],
+      encoder: [Encoder],
+      opts: [Object],
+      _adapter: [class Adapter extends EventEmitter],
+      sockets: [Namespace],
+      eio: [Server],
+      httpServer: [Server],
+      engine: [Server],
+      [Symbol(kCapture)]: false
+    },
+    adapter: Adapter {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      nsp: [Namespace],
+      rooms: [Map],
+      sids: [Map],
+      encoder: [Encoder],
+      [Symbol(kCapture)]: false
+    },
+    id: 'Th_W3WzBpPYdddx-AAAF',
+    handshake: {
+      headers: [Object],
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      secure: false,
+      issued: 1723114166062,
+      url: '/socket.io/?EIO=4&transport=websocket',
+      query: [Object: null prototype],
+      auth: {}
+    },
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      secure: false,
+      issued: 1723114166062,
+      url: '/socket.io/?EIO=4&transport=websocket',
+      query: [Object: null prototype],
+      auth: {}
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      secure: false,
+      issued: 1723114166062,
+      url: '/socket.io/?EIO=4&transport=websocket',
+      query: [Object: null prototype],
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      secure: false,
+      issued: 1723114166062,
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      secure: false,
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      secure: false,
+      issued: 1723114166062,
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      xdomain: false,
+      time: 'Thu Aug 08 2024 17:19:26 GMT+0630 (Myanmar Time)',
+      address: '192.168.100.28',
+      address: '192.168.100.28',
+      xdomain: false,
+      secure: false,
+      issued: 1723114166062,
+      url: '/socket.io/?EIO=4&transport=websocket',
+      query: [Object: null prototype],
+      auth: {}
+    },
+    [Symbol(kCapture)]: false
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,15 +17,15 @@ app.use("/uploads", express.static("uploads"));
 
 
 io.on("connection", (socket) => {
-    // console.log("connected");
-    // console.log(socket.id, "Has joined");
+    console.log("connected");
+    console.log(socket.id, "Has joined");
     // socket.on("/test", (msg) => {
     //     console.log(msg);
     // })
     socket.on("signin", (id) => {
-        // console.log("signin ", id);
+        console.log("signin ", id);
         clients[id] = socket;
-        // console.log("clients ", clients);
+        console.log("clients ", clients);
     })
     socket.on("message", (msg) => {
         // console.log("msg => ", msg);
@@ -42,3 +42,8 @@ server.listen(port, "0.0.0.0",() => {
     console.log("Server started at port ", port);
 });
 
+
+// can text encrypt, decrypt
+// const decrypt = require('./decrypt');
+// const encrypt = require('./encrypt');
+// const encrypt = require('./encrypt_decrypt_with_buffer');
